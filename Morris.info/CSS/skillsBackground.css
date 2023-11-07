@@ -7,6 +7,7 @@
 
 .icon-wrapper {
     display: inline-flex;
+    justify-content: center;
     flex-flow: wrap;
     position: absolute;
     width: 100%;
@@ -17,21 +18,28 @@
     z-index: 10;
 }
 
+/* .itemContainer {
+    display: flex;
+    position: relative;
+    width: 255px;
+    height: 255px;
+} */
+
 .icon-word-container {
     position: relative;
+    max-width: 255px;
+    max-height: 255px;
     margin-bottom: 2%;
     margin-right: 63px;
-    max-width: 500px;
-    max-height: 255px;
     cursor: default;
     text-align: center;
 }
-    
+
 .icon-word-container:hover {
     transition: transform 0.05 linear;
 }
 
 .skills-images {
-    height: 100%;
-    width: 500px;
+    max-width: 225px;
+    max-height: 225px;
 }
