@@ -23,7 +23,7 @@
         </div>
         <span class="navigation-wrapper">
             <span class="logo">
-                <img src="Images/cat.png" alt="BagelTheCat">
+                <img id="cat" src="Images/cat.png" alt="BagelTheCat">
             </span>
             <nav>
                 <span id="pagesNav">
@@ -41,47 +41,42 @@
                     </a>
                 </span>
                 <span id="socialMedia">
-                    <div style="width: 59px; height: 59px;">
-                        <a target="_blank" href="https://www.linkedin.com/in/augustinemorris/"><img
-                                src="Images/icons8-linkedin-48.png" alt="LinkedIn">
-                        </a>
-                    </div>
-                    <div class="icon">
-                        <a class="" target="_blank" href="https://github.com/GitGus5"><img
-                                src="Images/icons8-github-50.png" alt="GitHub">
-                        </a>
+                    <div id="iconContainer">
+                        <div class="icon">
+                            <a target="_blank" href="https://www.linkedin.com/in/augustinemorris/"><img
+                                    src="Images/icons8-linkedin-48.png" alt="LinkedIn">
+                            </a>
+                            <!-- https://icons8.com/icon/xuvGCOXi8Wyg/linkedin -->
+                        </div>
+                        <div class="icon">
+                            <a id="github" target="_blank" href="https://github.com/GitGus5"><img
+                                    src="Images/icons8-github-50.png" alt="GitHub">
+                            </a>
+                            <!-- https://icons8.com/icon/12599/github -->
+                        </div>
                     </div>
                 </span>
             </nav>
         </span>
     </header>
+    <!-- matrix effect -->
+    <canvas id="canvas">
+    </canvas>
     <!-- <div id="main-page-wrapper"> -->
     <div id="home">
-        <!-- <div class="background"> -->
-        <!-- </div> -->
-        <!-- <main> -->
-
         <div class="opening-paragraph">
             <div id="title-wrapper">
                 <p id='header1' class='header'>Welcome to Augustine Morris's Website!</p>
                 <p id='header2' class='header'>Software Developer</p>
-                <span class="navigation-wrapper-home">
+                <div id="header3" title="Download">
+                    <a class="a-color black-text" target="_blank" href="OTHER/AugustineJMorrisResume.pdf"
+                        download>Resume
+                        <img id="download" src="Images/downloads.png"></a>
+                </div>
             </div>
-            <nav class="home-nav">
-                <div class="not-ready-button" title="Coming soon!">
-                    <a class="a-color-not-ready">Resume</a>
-                </div>
-                <div>
-                    <img id="cat_image" class="img"></img>
-                </div>
-            </nav>
-            </span>
         </div>
-        <!-- </main> -->
     </div>
     <div id="skills">
-        <canvas id="canvas">
-        </canvas>
         <!-- refer to script.js lines 40 to 43 -->
         <div class="icon-wrapper">
         </div>
@@ -98,7 +93,5 @@
 <script src="JS/script.js"></script>
 <script src="JS/matrixEffect.js"></script>
 <script src="JS/apis.js"></script>
-<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 
 </html>
