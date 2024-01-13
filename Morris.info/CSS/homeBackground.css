@@ -1,3 +1,42 @@
+/* header */
+.opening-paragraph {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    /* flex-flow: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-wrapper-home,
+.home-nav,
+.navigation-wrapper,
+nav {
+    display: flex;
+    width: 100%;
+}
+
+.home-nav {
+    height: 30%;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.home-buttons {
+    margin: 0px 50px 0 50px;
+    border-radius: 50px;
+    background-color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.home-buttons .a-color:hover {
+    background-color: #fff;
+    color: #000 !important;
+    transition: 1s ease-in-out;
+    border-radius: 50px;
+}
+
 .background {
     box-sizing: border-box;
 }
@@ -16,47 +55,75 @@
     margin: auto;
 }
 
-.header {
-    position: relative;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 200;
-    color: white;
-    font-size: 4em;
-    margin-bottom: 20px;
+#title-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-flow: column;
 }
 
+
+.header {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 4em;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
 #header1 {
-    width: auto;
-    height: 50px;
+    -webkit-animation: fadeOut 1 3s ease-in;
+    -moz-animation: fadeOut 1 3s ease-in;
+    -o-animation: fadeOut 1 3s ease-in;
+    animation: fadeOut 1 3s ease-in;
 }
 
 #header2 {
-    width: auto;
-    height: 50px;
-}
-
-#head1,
-#head2,
-#head3,
-#head4,
-#head5 {
-    opacity: 0;
-}
-
-#head1 {
     -webkit-animation: fadeOut 1 5s ease-in;
     -moz-animation: fadeOut 1 5s ease-in;
     -o-animation: fadeOut 1 5s ease-in;
     animation: fadeOut 1 5s ease-in;
 }
 
-#head2 {
-    -webkit-animation: fadeOut 1 5s ease-in;
-    -moz-animation: fadeOut 1 5s ease-in;
-    -o-animation: fadeOut 1 5s ease-in;
-    animation: fadeOut 1 5s ease-in;
-    -webkit-animation-delay: 6s;
-    -moz-animation-delay: 6s;
-    -o-animation-delay: 6s;
-    animation-delay: 6s;
+
+#header3 {
+    display: flex;
+    height: 5%;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    -webkit-animation: fadeOut 1 7s ease-in;
+    -moz-animation: fadeOut 1 7s ease-in;
+    -o-animation: fadeOut 1 7s ease-in;
+    animation: fadeOut 1 7s ease-in;
+}
+
+.black-text {
+    color: #000 !important;
+}
+
+#download {
+    height: 25px;
+    width: 25px;
+}
+
+#header3:hover {
+    border: 2px solid #000;
 }
