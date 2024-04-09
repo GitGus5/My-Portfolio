@@ -7,6 +7,7 @@
     <meta charset="utf-8" name="viewpoint" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="Images/bagelTheCat.ico">
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/home.css">
     <link rel="stylesheet" href="CSS/homeBackground.css">
     <link rel="stylesheet" href="CSS/skillsBackground.css">
     <link rel="stylesheet" href="CSS/banner.css">
@@ -21,43 +22,52 @@
 
             </div>
         </div>
-        <span class="navigation-wrapper">
+        <!-- <span class="navigation-wrapper"> -->
+        <nav class="navigation-wrapper">
             <span class="logo">
-                <img id="cat" src="Images/cat.png" alt="BagelTheCat">
+                <img id="cat" src="Images/cat.jpeg" alt="BagelTheCat">
             </span>
-            <nav>
-                <span id="pagesNav">
-                    <a href="#home" class="pages-button">
-                        <div class="a-color">Home</div>
-                    </a>
-                    <a href="#skills" class="pages-button" title="Coming soon!">
-                        <div class="a-color">Skills</div>
-                    </a>
-                    <a href="#experience" class="not-ready-button" title="Coming soon!">
-                        <div class="a-color-not-ready">Experience</div>
-                    </a>
-                    <a href="#aboutMe" class="not-ready-button" title="Coming soon!">
-                        <div class="a-color-not-ready">About Me</div>
-                    </a>
-                </span>
-                <span id="socialMedia">
-                    <div id="iconContainer">
-                        <div class="icon">
-                            <a target="_blank" href="https://www.linkedin.com/in/augustinemorris/"><img
-                                    src="Images/icons8-linkedin-48.png" alt="LinkedIn">
-                            </a>
-                            <!-- https://icons8.com/icon/xuvGCOXi8Wyg/linkedin -->
-                        </div>
-                        <div class="icon">
-                            <a id="github" target="_blank" href="https://github.com/GitGus5"><img
-                                    src="Images/icons8-github-50.png" alt="GitHub">
-                            </a>
-                            <!-- https://icons8.com/icon/12599/github -->
-                        </div>
+            <div id="headerWrapper">
+                <p id='header1' class='header'>Welcome to Augustine Morris's Website!</p>
+            </div>
+            <!-- <span id="pagesNav">
+                <a href="#home" class="pages-button">
+                    <div class="a-color">Home</div>
+                </a>
+                <a href="#skills" class="pages-button" title="Coming soon!">
+                    <div class="a-color">Skills</div>
+                </a>
+                <a href="#experience" class="not-ready-button" title="Coming soon!">
+                    <div class="a-color-not-ready">Experience</div>
+                </a>
+                <a href="#aboutMe" class="not-ready-button" title="Coming soon!">
+                    <div class="a-color-not-ready">About Me</div>
+                </a>
+            </span> -->
+            <span id="socialMedia">
+                <div id="iconContainer">
+                    <div class="icon" title="Resume">
+                        <a target="_blank" href="https://www.linkedin.com/in/augustinemorris/" ><img
+                                src="Images/icons8-linkedin-48.png" alt="LinkedIn">
+                        </a>
+                        <!-- https://icons8.com/icon/xuvGCOXi8Wyg/linkedin -->
                     </div>
-                </span>
-            </nav>
-        </span>
+                    <div class="icon">
+                        <a id="github" target="_blank" href="https://github.com/GitGus5"><img
+                                src="Images/icons8-github-50.png" alt="GitHub">
+                        </a>
+                        <!-- https://icons8.com/icon/12599/github -->
+                    </div>                      
+                    <div class="icon">
+                        <a target="_blank" href="OTHER/AugustineJMorrisResume.pdf" >
+                            <img src="Images/icons8-resume-50.png" alt="Resume">
+                        </a>
+                        <!-- https://icons8.com/icon/xuvGCOXi8Wyg/linkedin -->
+                    </div>
+                </div>
+            </span>
+        </nav>
+        <!-- </span> -->
     </header>
     <!-- matrix effect -->
     <canvas id="canvas">
@@ -66,26 +76,18 @@
     <div id="home">
         <div class="opening-paragraph">
             <div id="title-wrapper">
-                <p id='header1' class='header'>Welcome to Augustine Morris's Website!</p>
-                <p id='header2' class='header'>Software Developer</p>
-                <div id="header3" title="Download">
-                    <a class="a-color black-text" target="_blank" href="OTHER/AugustineJMorrisResume.pdf"
-                        download>Resume
-                        <img id="download" src="Images/downloads.png"></a>
-                </div>
             </div>
         </div>
-    </div>
-    <div id="skills">
-        <!-- refer to script.js lines 40 to 43 -->
-        <div class="icon-wrapper">
+        
+        <div id="skills">
+            <!-- refer to script.js lines 40 to 43 -->
+            <div class="icon-wrapper">
+            </div>
         </div>
-    </div>
-    <div id="experience" class="hidden">
-        Coming Soon!
-    </div>
-    <div id="aboutMe" class="hidden">
-        Coming Soon!
+        <div id="experience" class="hidden">
+        </div>
+        <div id="aboutMe" class="hidden">
+        </div>
     </div>
     <!-- </div> -->
     
