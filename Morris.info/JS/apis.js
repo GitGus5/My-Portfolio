@@ -16,9 +16,10 @@ const request = (url) => {
   });
 };
 
-// Asynchronous function to get cat facts
+// Asynchronous function enables asynchronous, promise-based behavior
 async function getCatFacts() {
   try {
+    // await operator is used to wait for a Promise and get its fulfillment value: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await
     const catData = await request('https://catfact.ninja/facts');
     let factsHtml = '';
 
