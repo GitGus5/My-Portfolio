@@ -1,4 +1,14 @@
 /* header */
+#home {
+    display: flex;
+    flex-flow: column;
+    height:100%;
+    width: 100%;
+    z-index: 10;
+    overflow: hidden;
+    background-color: black;
+    opacity: .6;
+}
 .opening-paragraph {
     display: flex;
     height: 100%;
@@ -64,15 +74,20 @@ nav {
     flex-flow: column;
 }
 
-
+#headerWrapper {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
 .header {
     display: flex;
-    text-align: center;
-    align-items: center;
+    justify-content: center;
+    width: 100%;
     font-family: 'Roboto', sans-serif;
-    font-weight: 600;
+    font-weight: 600; 
     color: white;
-    font-size: 4em;
+    font-size: 1.5em; 
 }
 
 @keyframes fadeOut {
